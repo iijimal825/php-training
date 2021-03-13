@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<HTML lang="ja">
+<HEAD>
+  <TITLE>example10</TITLE>
+  <META http-equiv="Content-Type" content="text/html; charset=utf-8" />
+</HEAD>
+<BODY>
+  <H2>データベースの扱い</H2>
+  <H3>デジカメに関するアンケート</H3>
+  <FORM METHOD="POST" ACTION="ex1001check.php">
+    <LABEL>性別：</LABEL>
+    <INPUT TYPE="radio" NAME="gender" VALUE="男" checked>男
+    <INPUT type="radio" NAME="gender" VALUE="女">女
+    <BR />
+    <LABEL>年代：</LABEL>
+      <SELECT NAME="age">
+      <OPTION VALUE="10代" >10代</OPTION>
+      <OPTION VALUE="20代">20代</OPTION>
+      <OPTION VALUE="30代" selected>30代</OPTION>
+      <OPTION VALUE="40代">40代</OPTION>
+      <OPTION VALUE="50代">50代</OPTION>
+      <OPTION VALUE="60代">60代</OPTION>
+      <OPTION VALUE="70歳以上">70歳以上</OPTION>
+      </SELECT>
+    <BR />
+    <LABEL>職業：</LABEL>
+      <SELECT NAME="job">
+      <OPTION VALUE="学生" >学生</OPTION>
+      <OPTION VALUE="会社員" selected>会社員</OPTION>
+      <OPTION VALUE="公務員">公務員</OPTION>
+      <OPTION VALUE="自営業">自営業</OPTION>
+      <OPTION VALUE="自由業">自由業</OPTION>
+      <OPTION VALUE="アルバイト">パート・アルバイト</OPTION>
+      <OPTION VALUE="家事">家事</OPTION>
+      <OPTION VALUE="その他">その他</OPTION>
+      </SELECT>
+    <BR />
+    <LABEL>カメラの種類：</LABEL>
+      <SELECT NAME="kind">
+      <OPTION VALUe="一眼レフ">一眼レフ</OPTION>
+      <OPTION VALUE="ミラーレス">ミラーレス</OPTION>
+      <OPTION VALUE="コンパクト">コンパクト</OPTION>
+      <OPTION VALUE="携帯・スマホ" selected>携帯・スマホ</OPTION>
+      <OPTION VALUE="フィルムカメラ">フィルム</OPTION>
+      <OPTION VALUE="その他">その他</OPTION>
+      </SELECT>
+    <BR />
+    <LABEL>一週間の撮影枚数：</LABEL>
+      およそ <INPUT TYPE="text" SIZE="4" NAME="shots"> コマ程度
+    <BR /><BR />
+
+    <LABEL>ボタンを押して内容をご確認ください。</LABEL>
+    <BR />
+    <INPUT TYPE="submit" VALUE="回答内容を確認">
+    <INPUT TYPE="reset" VALUE="取消">
+    </FORM>
+  </BODY>
+</HTML>
